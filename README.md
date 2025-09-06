@@ -64,7 +64,7 @@ A unique dual-interface portfolio showcasing software development skills through
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/samuel-dev/portfolio.git
+git clone https://github.com/musyoka-exe/portfolio-1.git
 cd portfolio
 ```
 
