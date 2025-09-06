@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Musyoka- Software Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Mode Selection Popup -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup">
+            <h2>Choose Your Experience</h2>
+            <p>How would you like to explore Samuel's portfolio?</p>
+            <div class="popup-buttons">
+                <button class="popup-btn normal-btn" onclick="showNormalPortfolio()">
+                    <i class="fas fa-desktop"></i>
+                    <span>Visual Portfolio</span>
+                    <small>Beautiful & Interactive</small>
+                </button>
+                <button class="popup-btn cmd-btn" onclick="showCmdInterface()">
+                    <i class="fas fa-terminal"></i>
+                    <span>Command Line</span>
+                    <small>For the Tech-Savvy</small>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Normal Portfolio -->
+    <div class="normal-portfolio" id="normalPortfolio">
+        <!-- Animated Background -->
+        <div class="animated-bg">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+                <div class="shape shape-5"></div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <span>Samuel</span>
+                </div>
+                <div class="nav-menu">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="#resume" class="nav-link">Resume</a>
+                    <button class="mode-switch-btn" onclick="showModePopup()">
+                        <i class="fas fa-terminal"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Hi, I'm Samuel</span>
+                    </h1>
+                    <h2 class="hero-subtitle">Software Developer & AI Enthusiast</h2>
+                    <p class="hero-description">
+                        Passionate about creating innovative solutions that make a difference. 
+                        Let's build something amazing together!
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i> View My Work
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i> Get In Touch
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <i class="fas fa-user-astronaut"></i>
+                        </div>
+                        <div class="profile-stats">
+                            <div class="stat">
+                                <span class="stat-number">3+</span>
+                                <span class="stat-label">Years Exp</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Projects</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Dedication</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            Software Developer with 3+ years of experience in Python development.
+                            Passionate about creating efficient, scalable solutions and learning new technologies.
+                            Currently seeking opportunities to contribute to innovative projects.
+                        </p>
+                        <div class="about-highlights">
+                            <div class="highlight">
+                                <i class="fas fa-code"></i>
+                                <h4>Clean Code Advocate</h4>
+                                <p>Writing maintainable, efficient code that stands the test of time.</p>
+                            </div>
+                            <div class="highlight">
+                                <i class="fas fa-lightbulb"></i>
+                                <h4>Problem Solver</h4>
+                                <p>Love tackling complex challenges and finding creative solutions.</p>
+                            </div>
+                            <div class="highlight">
+                                <i class="fas fa-users"></i>
+                                <h4>Team Player</h4>
+                                <p>Collaborative approach with excellent communication skills.</p>
+                            </div>
+                            <div class="highlight">
+                                <i class="fas fa-graduation-cap"></i>
+                                <h4>Continuous Learner</h4>
+                                <p>Always eager to learn new technologies and improve my skills.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3><i class="fab fa-python"></i> Backend</h3>
+                        <div class="skill-items">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Django</span>
+                            <span class="skill-tag">Flask</span>
+                            <span class="skill-tag">FastAPI</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">MySQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fab fa-js-square"></i> Frontend</h3>
+                        <div class="skill-items">
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">SASS</span>
+                            <span class="skill-tag">Bootstrap</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-tools"></i> Tools & Others</h3>
+                        <div class="skill-items">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Linux</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">NumPy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-terminal project-icon"></i>
+                            <h3>Interactive Portfolio</h3>
+                        </div>
+                        <p>Dual-interface portfolio with command-line functionality and modern design.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-tasks project-icon"></i>
+                            <h3>Shamba AI</h3>
+                        </div>
+                        <p>A powerful tool for farmers to detect their crop diseases using AI.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-chart-line project-icon"></i>
+                            <h3>Passport Power Index</h3>
+                        </div>
+                        <p>Beautiful and Interactive map showcasing passport rankings and travel freedom.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>Chart.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="https://passport-power-sam.onrender.com" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume" class="resume">
+            <div class="container">
+                <h2 class="section-title">My Resume</h2>
+                <div class="resume-content">
+                    <p>You can download my resume to learn more about my experience and skills.</p>
+                    <a href="Samuel_Musyoka_Resume.pdf" class="btn btn-primary" download>
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Let's Work Together</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>samuelmmy071@email.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <p>linkedin.com/in/samuel-musyoka-exe</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <h4>GitHub</h4>
+                                <p>github.com/musyoka-exe</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Available for remote and onsite work</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Your Message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Command Line Interface -->
+    <div class="cmd-interface" id="cmdInterface">
+        <div class="cmd-container">
+            <div class="cmd-header">
+                <div class="cmd-controls">
+                    <div class="cmd-control red" onclick="showModePopup()"></div>
+                    <div class="cmd-control yellow"></div>
+                    <div class="cmd-control green"></div>
+                </div>
+                <div class="cmd-title">Samuel's Portfolio Terminal</div>
+                <button class="mode-switch-btn" onclick="showModePopup()">
+                    <i class="fas fa-desktop"></i>
+                </button>
+            </div>
+            <div class="cmd-body">
+                <div class="cmd-welcome">
+                    <div class="cmd-line">Samuel's Interactive Portfolio Terminal v1.0</div>
+                    <div class="cmd-line">Type 'help' to see available commands</div>
+                    <div class="cmd-line">========================================</div>
+                </div>
+                <div class="cmd-output" id="cmdOutput"></div>
+                <div class="cmd-input-container">
+                    <span class="cmd-prompt">samuel@portfolio:~$</span>
+                    <input type="text" class="cmd-input" id="cmdInput" autofocus>
+                    <span class="cursor">|</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
